@@ -11,6 +11,6 @@ import Foundation
 class TwoProfileView: RootProfileView<BetaView> {
     
     override func configure(with dataSource: SecondDataSourceProtocol) {
-        
+        internalView.configure(with: dataSource)
     }
 }

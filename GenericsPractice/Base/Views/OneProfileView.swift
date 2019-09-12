@@ -11,6 +11,6 @@ import Foundation
 class OneProfileView: RootProfileView<AlphaView> {
     
     override func configure(with dataSource: FirstDataSourceProtocol) {
-        
+        internalView.configure(with: dataSource)
     }
 }

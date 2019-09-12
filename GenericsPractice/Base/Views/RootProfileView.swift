@@ -12,8 +12,10 @@ typealias InternalViewType = BaseView & Configurable
 
 class RootProfileView<T: InternalViewType>: BaseView, Configurable {
     
+    let internalView = T()
+    
     func configure(with dataSource: T.DataSource) {
-        
+        internalView.configure(with: dataSource)
     }
     
 }
