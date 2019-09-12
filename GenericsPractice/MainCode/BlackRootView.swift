@@ -8,11 +8,15 @@
 
 import UIKit
 
-protocol BlackDataSource:BaseDataSourceProtocol {
+protocol BlackDataSourceProtocol:BaseDataSourceProtocol {
     
 }
 
-class BlackRootView:RootView<BlackChildViewProtocol>{
+class BlackDataSource:BlackDataSourceProtocol {
+    
+}
+
+class BlackRootView:RootView<BlackChildView<BlackDataSource>> {
     
 }
 
@@ -20,7 +24,7 @@ protocol BlackChildViewProtocol:ChildViewProtocol {
     
 }
 
-class BlackChildView<BlackDataSourceType:BlackDataSource>:ChildViewProtocol {
+class BlackChildView<BlackDataSourceType:BlackDataSourceProtocol>:ChildViewProtocol {
     
     var dataSource: BaseDataSourceProtocol
     
