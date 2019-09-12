@@ -8,11 +8,7 @@
 
 import Foundation
 
-protocol BaseDataSourceProtocol {
-    
-}
-
 protocol ChildViewProtocol {
-    var dataSource:BaseDataSourceProtocol { get set }
+    var dataSource: BaseDataSourceProtocol { get set }
 }
 

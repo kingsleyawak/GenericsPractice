@@ -9,9 +9,15 @@
 import UIKit
 
 class RootView<ChildViewType:ChildViewProtocol>:BaseView {
-    let childView:ChildViewProtocol
     
-    init(childView:ChildViewType) {
+    let childView: ChildViewType
+    
+    init(childView: ChildViewType) {
         self.childView = childView
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
