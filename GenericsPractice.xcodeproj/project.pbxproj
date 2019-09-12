@@ -14,8 +14,8 @@
 		C486FE39232AD24D003AEEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C486FE38232AD24D003AEEB9 /* Assets.xcassets */; };
 		C486FE3C232AD24D003AEEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C486FE3A232AD24D003AEEB9 /* LaunchScreen.storyboard */; };
 		C486FE45232AD280003AEEB9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486FE44232AD280003AEEB9 /* BaseView.swift */; };
-		C486FE47232AD2D6003AEEB9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486FE46232AD2D5003AEEB9 /* RootView.swift */; };
-		C486FE49232AD2E4003AEEB9 /* ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486FE48232AD2E4003AEEB9 /* ChildView.swift */; };
+		C486FE47232AD2D6003AEEB9 /* BaseRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486FE46232AD2D5003AEEB9 /* BaseRootView.swift */; };
+		C486FE49232AD2E4003AEEB9 /* BaseChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486FE48232AD2E4003AEEB9 /* BaseChildView.swift */; };
 		C4BAB3AC232AD41A00301145 /* BaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAB3AB232AD41A00301145 /* BaseProtocols.swift */; };
 		C4BAB3AF232AD7A700301145 /* BlackRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAB3AE232AD7A700301145 /* BlackRootView.swift */; };
 /* End PBXBuildFile section */
@@ -30,8 +30,8 @@
 		C486FE3B232AD24D003AEEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C486FE3D232AD24D003AEEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C486FE44232AD280003AEEB9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		C486FE46232AD2D5003AEEB9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		C486FE48232AD2E4003AEEB9 /* ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildView.swift; sourceTree = "<group>"; };
+		C486FE46232AD2D5003AEEB9 /* BaseRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRootView.swift; sourceTree = "<group>"; };
+		C486FE48232AD2E4003AEEB9 /* BaseChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChildView.swift; sourceTree = "<group>"; };
 		C4BAB3AB232AD41A00301145 /* BaseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocols.swift; sourceTree = "<group>"; };
 		C4BAB3AE232AD7A700301145 /* BlackRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +92,8 @@
 		C486FE4A232AD342003AEEB9 /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
-				C486FE46232AD2D5003AEEB9 /* RootView.swift */,
-				C486FE48232AD2E4003AEEB9 /* ChildView.swift */,
+				C486FE46232AD2D5003AEEB9 /* BaseRootView.swift */,
+				C486FE48232AD2E4003AEEB9 /* BaseChildView.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -182,9 +182,9 @@
 				C486FE32232AD24A003AEEB9 /* SceneDelegate.swift in Sources */,
 				C4BAB3AF232AD7A700301145 /* BlackRootView.swift in Sources */,
 				C486FE45232AD280003AEEB9 /* BaseView.swift in Sources */,
-				C486FE47232AD2D6003AEEB9 /* RootView.swift in Sources */,
+				C486FE47232AD2D6003AEEB9 /* BaseRootView.swift in Sources */,
 				C4BAB3AC232AD41A00301145 /* BaseProtocols.swift in Sources */,
-				C486FE49232AD2E4003AEEB9 /* ChildView.swift in Sources */,
+				C486FE49232AD2E4003AEEB9 /* BaseChildView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

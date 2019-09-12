@@ -16,19 +16,25 @@ class BlackDataSource:BlackDataSourceProtocol {
     
 }
 
-class BlackRootView:RootView<BlackChildView<BlackDataSource>> {
+protocol BlackChildViewProtocol:BaseChildViewProtocol {
     
 }
 
-protocol BlackChildViewProtocol:ChildViewProtocol {
+/*
+ 
+ //struct AndSpecification<T, SpecA: Specification, SpecB: Specification> : Specification where T == SpecA.T, SpecA.T == SpecB.T
+
+ */
+
+class BlackRootView<childView:BlackChildViewProtocol>{
     
 }
 
-class BlackChildView<BlackDataSourceType:BlackDataSourceProtocol>:ChildViewProtocol {
+
+class BlackChildView:BaseChildView<BlackDataSource> {
     
-    var dataSource: BaseDataSourceProtocol
     
-    init(dataSource:BlackDataSourceType) {
+    init(dataSource:BlackDataSourceProtocol) {
         self.dataSource = dataSource
     }
 }

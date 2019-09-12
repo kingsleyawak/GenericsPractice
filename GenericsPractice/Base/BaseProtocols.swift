@@ -12,7 +12,7 @@ protocol BaseDataSourceProtocol {
     
 }
 
-protocol ChildViewProtocol {
+protocol BaseChildViewProtocol {
     var dataSource:BaseDataSourceProtocol { get set }
 }
 

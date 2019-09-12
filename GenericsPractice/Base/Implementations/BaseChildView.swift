@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChildView<DataSourceType:BaseDataSourceProtocol>:BaseView, ChildViewProtocol {
+class BaseChildView<DataSourceType:BaseDataSourceProtocol>:BaseView, BaseChildViewProtocol {
     
     var dataSource:BaseDataSourceProtocol
     

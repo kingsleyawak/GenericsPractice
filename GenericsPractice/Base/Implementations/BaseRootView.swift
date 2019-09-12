@@ -8,8 +8,8 @@
 
 import UIKit
 
-class RootView<ChildViewType:ChildViewProtocol>:BaseView {
-    let childView:ChildViewProtocol
+class BaseRootView<ChildViewType:BaseChildViewProtocol>:BaseView {
+    let childView:BaseChildViewProtocol
     
     init(childView:ChildViewType) {
         self.childView = childView
