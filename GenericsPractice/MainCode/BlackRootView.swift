@@ -12,9 +12,7 @@ protocol BlackDataSource:BaseDataSourceProtocol {
     
 }
 
-//struct AndSpecification<T, SpecA: Specification, SpecB: Specification> : Specification where T == SpecA.T, SpecA.T == SpecB.T
-
-class BlackRootView:RootView {
+class BlackRootView:RootView<BlackChildViewProtocol>{
     
 }
 
@@ -23,6 +21,7 @@ protocol BlackChildViewProtocol:ChildViewProtocol {
 }
 
 class BlackChildView<BlackDataSourceType:BlackDataSource>:ChildViewProtocol {
+    
     var dataSource: BaseDataSourceProtocol
     
     init(dataSource:BlackDataSourceType) {
